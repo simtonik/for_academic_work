@@ -1,0 +1,16 @@
+package somtonik;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class DoubleFactorialTest {
+
+    @Test
+    void testFactorial() {
+        assertEquals(15, DoubleFactorial.doubleFactorial(5));
+        assertEquals(48, DoubleFactorial.doubleFactorial(6));
+        assertEquals(105, DoubleFactorial.doubleFactorial(7));
+    }
+
+}
