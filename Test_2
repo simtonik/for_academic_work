@@ -1,0 +1,16 @@
+package org.example;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class Main1 {
+
+    @Test
+    void testFactorial() {
+        assertEquals(5, Main1.a(2));
+        assertEquals(13, Main1.a(3));
+        assertEquals(34, Main1.a(4));
+    }
+
+}
