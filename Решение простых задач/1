@@ -1,0 +1,34 @@
+package org.example;
+
+public class Main {
+    public static void main(String[] args) {
+        String queen = "e4";
+        String figure1 = "e7";
+        String figure2 = "h7";
+
+        check(queen, figure1);
+        check(queen, figure2);
+    }
+    public static void check(String queen, String figure) {
+        int x1 = queen.charAt(0);
+        int y1 = queen.charAt(1);
+
+        int x2 = figure.charAt(0);
+        int y2 = figure.charAt(1);
+
+        boolean attack = x1 == x2 || y1 == y2 ||
+                Math.abs(x1 - x2) == Math.abs(y1 - y2);
+
+        if (attack) {
+            System.out.println("Фигура под угрозой");
+        } else {
+            System.out.println("Фигура не под угрозой");
+        }
+
+        if ((x2 + y2) % 2 == 0) {
+            System.out.println("Черная клетка");
+        } else {
+            System.out.println("Белая клетка");
+        }
+    }
+}
